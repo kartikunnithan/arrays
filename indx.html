@@ -8,9 +8,15 @@
 <body>
     <h1>Real Madrid Players</h1>
     <p id="demo"></p>
+    <p id="myjoin"></p>
+    <p id="mypop"></p>
     <script>
         var rmplayers=["vinicious junior", "Jude Bellingham", "Kylian Mbappe", "Valverde","Rodgrygo", "Rudiger"];
         document.getElementById("demo").innerHTML=rmplayers[0] + " "+rmplayers[1]+" "+ rmplayers[2]+" "+ rmplayers[3] + " " + rmplayers[4] + " " + rmplayers[5];
+        document.getElementById("myjoin").innerHTML=rmplayers.join("*");
+        rmplayers.pop();
+        document.getElementById("mypop").innerHTML = rmplayers;
+
 
     </script>
 </body>
